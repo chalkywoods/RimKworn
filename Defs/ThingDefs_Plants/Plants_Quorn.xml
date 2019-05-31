@@ -21,7 +21,7 @@
 			<dieIfLeafless>true</dieIfLeafless>
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>SugarCane</harvestedThingDef>
-      <harvestYield>15</harvestYield>
+      <harvestYield>10</harvestYield>
       <sowTags>
         <li>Ground</li>
       </sowTags>
