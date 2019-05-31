@@ -25,4 +25,27 @@
     </ingestible>
   </ThingDef>
 
+  <ThingDef ParentName="ResourceBase">
+    <defName>SugarRefined</defName>
+    <label>sugar</label>
+    <description>Refined sugar</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/SugarRefined</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.04</Mass>
+      <Flammability>0.7</Flammability>
+	  <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+  </ThingDef>
+
 </Defs>

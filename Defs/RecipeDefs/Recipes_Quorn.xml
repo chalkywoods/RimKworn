@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Refine_Sugar</defName>
+    <label>refine sugar</label>
+    <description>Crush and boil raw sugar cane to produce refined sugar.</description>
+    <jobString>Refining sugar.</jobString>
+    <workAmount>450</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SugarCane</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <SugarRefined>10</SugarRefined>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SugarCane</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>SugarCane</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+</Defs>
