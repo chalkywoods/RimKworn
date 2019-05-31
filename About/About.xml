@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RimQuorn</name>
+  <author>chalkywoods</author>
+  <description>A mycoprotien fermentation mod to help turn your colonists veggie.</description>
+  <supportedVersions>
+    <li>1.0</li>
+  </supportedVersions>
+</ModMetaData>
