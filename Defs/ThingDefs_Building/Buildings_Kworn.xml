@@ -2,12 +2,12 @@
 <Defs>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>QuornFermenter</defName>
+    <defName>KwornVat</defName>
     <label>mycoprotein fermentation vat</label>
     <description>A vat for cultivating mycoprotein.</description>
     <thingClass>Building_FermentingBarrel</thingClass> <!-- What is this? -->
     <graphicData>
-      <texPath>Things/Buildings/Production/QuornFermenter</texPath>
+      <texPath>Things/Buildings/Production/KwornVat</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <damageData>

@@ -48,4 +48,27 @@
     </thingCategories>
   </ThingDef>
 
+  <ThingDef ParentName="ResourceBase">
+    <defName>Mycoprotein</defName>
+    <label>mycoprotein</label>
+    <description>An untreated living fungal mass. High in protein.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Mycoprotein</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.04</Mass>
+      <Flammability>0.8</Flammability>
+	  <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+  </ThingDef>
+
 </Defs>

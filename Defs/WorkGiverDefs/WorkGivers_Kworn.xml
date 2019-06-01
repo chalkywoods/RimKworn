@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- <WorkGiverDef>
+    <defName>TakeBeerOutOfFermentingBarrel</defName>
+    <label>take beer out of fermenting barrels</label>
+    <giverClass>WorkGiver_TakeBeerOutOfFermentingBarrel</giverClass>
+    <workType>Hauling</workType>
+    <verb>take beer</verb>
+    <gerund>taking beer from</gerund>
+    <priorityInType>20</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef> -->
+
+  <WorkGiverDef>
+    <defName>FillKwornVat</defName>
+    <label>fill kworn vat</label>
+    <giverClass>RimKworn.WorkGiver_FillKwornVat</giverClass>
+    <workType>Hauling</workType>
+    <verb>fill</verb>
+    <gerund>filling</gerund>
+    <priorityInType>21</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</Defs>
