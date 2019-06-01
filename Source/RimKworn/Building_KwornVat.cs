@@ -172,11 +172,11 @@ namespace RimKworn
             {
                 if (this.Fermented)
                 {
-                    stringBuilder.AppendLine("ContainsBeer".Translate(this.sugarCount, 25));
+                    stringBuilder.AppendLine("ContainsSugar".Translate(this.sugarCount, 25));
                 }
                 else
                 {
-                    stringBuilder.AppendLine("ContainsWort".Translate(this.sugarCount, 25));
+                    stringBuilder.AppendLine("ContainsSugar".Translate(this.sugarCount, 25));
                 }
             }
             if (!this.Empty)
@@ -268,9 +268,9 @@ namespace RimKworn
 
         public const int MaxCapacity = 25;
 
-        private const int BaseFermentationDuration = 360000;
+        private const int BaseFermentationDuration = 90000;
 
-        public const float MinIdealTemperature = 7f;
+        public const float MinIdealTemperature = 20f;
 
         private static readonly Vector2 BarSize = new Vector2(0.55f, 0.1f);
 

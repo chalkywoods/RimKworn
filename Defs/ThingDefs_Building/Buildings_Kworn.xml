@@ -5,7 +5,7 @@
     <defName>KwornVat</defName>
     <label>mycoprotein fermentation vat</label>
     <description>A vat for cultivating mycoprotein.</description>
-    <thingClass>Building_FermentingBarrel</thingClass> <!-- What is this? -->
+    <thingClass>RimKworn.Building_KwornVat</thingClass>
     <graphicData>
       <texPath>Things/Buildings/Production/KwornVat</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
