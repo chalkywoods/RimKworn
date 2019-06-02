@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <ContainsSugar>Contains {0} / {1} sugar.</ContainsSugar>
+  <ContainsMycoprotein>Contains {0} / {1} mycoprotein.</ContainsMycoprotein>
+  
+</LanguageData>
