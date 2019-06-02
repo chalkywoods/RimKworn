@@ -48,7 +48,7 @@ namespace RimKworn
                 {
                     return 0;
                 }
-                return 25 - this.sugarCount;
+                return MaxCapacity - this.sugarCount;
             }
         }
 
@@ -78,9 +78,9 @@ namespace RimKworn
                 {
                     return 0.1f;
                 }
-                if (ambientTemperature < 20f)
+                if (ambientTemperature < MinIdealTemperature)
                 {
-                    return GenMath.LerpDouble(compProperties.minSafeTemperature, 20f, 0.1f, 1f, ambientTemperature);
+                    return GenMath.LerpDouble(compProperties.minSafeTemperature, MinIdealTemperature, 0.1f, 1f, ambientTemperature);
                 }
                 return 1f;
             }
@@ -90,7 +90,7 @@ namespace RimKworn
         {
             get
             {
-                return 2.77777781E-06f * this.CurrentTempProgressSpeedFactor;
+                return 2.77777781E-06f * this.CurrentTempProgressSpeedFactor * 3f;
             }
         }
 
@@ -126,7 +126,7 @@ namespace RimKworn
                 Log.Warning("Tried to add sugar to a vat full of fungus. Colonists should take the fungus first.", false);
                 return;
             }
-            int num = Mathf.Min(count, 25 - this.sugarCount);
+            int num = Mathf.Min(count, MaxCapacity - this.sugarCount);
             if (num <= 0)
             {
                 return;
@@ -151,7 +151,7 @@ namespace RimKworn
 
         public void AddSugar(Thing sugar)
         {
-            int num = Mathf.Min(sugar.stackCount, 25 - this.sugarCount);
+            int num = Mathf.Min(sugar.stackCount, MaxCapacity - this.sugarCount);
             if (num > 0)
             {
                 this.AddSugar(num);
@@ -172,11 +172,11 @@ namespace RimKworn
             {
                 if (this.Fermented)
                 {
-                    stringBuilder.AppendLine("ContainsSugar".Translate(this.sugarCount, 25));
+                    stringBuilder.AppendLine("ContainsMycoprotein".Translate(this.sugarCount, MaxCapacity));
                 }
                 else
                 {
-                    stringBuilder.AppendLine("ContainsSugar".Translate(this.sugarCount, 25));
+                    stringBuilder.AppendLine("ContainsSugar".Translate(this.sugarCount, MaxCapacity));
                 }
             }
             if (!this.Empty)
@@ -199,7 +199,7 @@ namespace RimKworn
             {
                 "IdealFermentingTemperature".Translate(),
                 ": ",
-                20f.ToStringTemperature("F0"),
+                MinIdealTemperature.ToStringTemperature("F0"),
                 " ~ ",
                 comp.Props.maxSafeTemperature.ToStringTemperature("F0")
             }));
@@ -210,7 +210,7 @@ namespace RimKworn
         {
             if (!this.Fermented)
             {
-                Log.Warning("Tried to get fungus but it's not yet fermented.", false);
+                Log.Warning("Tried to get mycoprotein but it's not yet fermented.", false);
                 return null;
             }
             Thing thing = ThingMaker.MakeThing(RimKworn.ThingDefOf.Mycoprotein, null);
@@ -231,7 +231,7 @@ namespace RimKworn
                 {
                     center = drawPos,
                     size = Building_KwornVat.BarSize,
-                    fillPercent = (float)this.sugarCount / 25f,
+                    fillPercent = (float)this.sugarCount / (float)MaxCapacity,
                     filledMat = this.BarFilledMat,
                     unfilledMat = Building_KwornVat.BarUnfilledMat,
                     margin = 0.1f,
@@ -266,17 +266,17 @@ namespace RimKworn
 
         private Material barFilledCachedMat;
 
-        public const int MaxCapacity = 25;
+        public const int MaxCapacity = 50;
 
         private const int BaseFermentationDuration = 90000;
 
         public const float MinIdealTemperature = 20f;
 
-        private static readonly Vector2 BarSize = new Vector2(0.55f, 0.1f);
+        private static readonly Vector2 BarSize = new Vector2(1.1f, 0.2f);
 
-        private static readonly Color BarZeroProgressColor = new Color(0.4f, 0.27f, 0.22f);
+        private static readonly Color BarZeroProgressColor = new Color(0.9f, 0.9f, 0.9f);
 
-        private static readonly Color BarFermentedColor = new Color(0.9f, 0.85f, 0.2f);
+        private static readonly Color BarFermentedColor = new Color(0.4f, 0.27f, 0.22f);
 
         private static readonly Material BarUnfilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.3f, 0.3f, 0.3f), false);
     }

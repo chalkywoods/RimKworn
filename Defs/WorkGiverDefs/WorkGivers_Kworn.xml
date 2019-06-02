@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- <WorkGiverDef>
-    <defName>TakeBeerOutOfFermentingBarrel</defName>
-    <label>take beer out of fermenting barrels</label>
-    <giverClass>WorkGiver_TakeBeerOutOfFermentingBarrel</giverClass>
+  <WorkGiverDef>
+    <defName>TakeFungusOutOFKwornVat</defName>
+    <label>take fungus out of kworn vat</label>
+    <giverClass>RimKworn.WorkGiver_TakeFungusOutOFKwornVat</giverClass>
     <workType>Hauling</workType>
-    <verb>take beer</verb>
-    <gerund>taking beer from</gerund>
+    <verb>take mycoprotein</verb>
+    <gerund>taking mycoprotein from</gerund>
     <priorityInType>20</priorityInType>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>
-  </WorkGiverDef> -->
+  </WorkGiverDef>
 
   <WorkGiverDef>
     <defName>FillKwornVat</defName>

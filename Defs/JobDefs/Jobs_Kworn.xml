@@ -9,11 +9,11 @@
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
   
-  <!--<JobDef>
-    <defName>TakeBeerOutOfFermentingBarrel</defName>
-    <driverClass>JobDriver_TakeBeerOutOfFermentingBarrel</driverClass>
-    <reportString>taking beer out of TargetA.</reportString>
+  <JobDef>
+    <defName>TakeFungusOutOfKwornVat</defName>
+    <driverClass>RimKworn.JobDriver_TakeFungusOutOFKwornVat</driverClass>
+    <reportString>taking mycoprotein out of TargetA.</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-  </JobDef> -->
+  </JobDef>
 
 </Defs>

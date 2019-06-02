@@ -13,5 +13,7 @@ namespace RimKworn
         }
 
         public static JobDef FillKwornVat;
+
+        public static JobDef TakeFungusOutOfKwornVat;
     }
 }

@@ -71,9 +71,9 @@ namespace RimKworn
             yield break;
         }
 
-        private const TargetIndex BarrelInd = TargetIndex.A;
+        private const TargetIndex VatInd = TargetIndex.A;
 
-        private const TargetIndex WortInd = TargetIndex.B;
+        private const TargetIndex SugarInd = TargetIndex.B;
 
         private const int Duration = 200;
     }
