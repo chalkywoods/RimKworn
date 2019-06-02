@@ -22,6 +22,7 @@
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>SugarCane</harvestedThingDef>
       <harvestYield>10</harvestYield>
+			<sowMinSkill>4</sowMinSkill>
       <sowTags>
         <li>Ground</li>
       </sowTags>

@@ -37,4 +37,40 @@
     <workSkill>Cooking</workSkill>
   </RecipeDef>
 
+  <RecipeDef>
+    <defName>FormKworn</defName>
+    <label>form kworn</label>
+    <description>Treat and form raw mycoprotein into an edible meat substitute.</description>
+    <jobString>Forming kworn.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Mycoprotein</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <Kworn>20</Kworn>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Mycoprotein</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Mycoprotein</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
 </Defs>

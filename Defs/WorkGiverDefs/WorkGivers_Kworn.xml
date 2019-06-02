@@ -27,4 +27,22 @@
     </requiredCapacities>
   </WorkGiverDef>
 
+  <WorkGiverDef>
+    <defName>DoBillsFormKworn</defName>
+    <label>form kworn at kworn former</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>94</priorityInType>
+    <fixedBillGiverDefs>
+      <li>KwornFormer</li>
+    </fixedBillGiverDefs>
+    <verb>form</verb>
+    <gerund>forming at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+
 </Defs>

@@ -40,12 +40,18 @@
       <MaxHitPoints>60</MaxHitPoints>
       <MarketValue>1</MarketValue>
       <Mass>0.04</Mass>
+      <Nutrition>0.04</Nutrition>
       <Flammability>0.7</Flammability>
 	  <DeteriorationRate>2.0</DeteriorationRate>
     </statBases>
+    <tickerType>Rare</tickerType>
     <thingCategories>
       <li>PlantMatter</li>
     </thingCategories>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <preferability>DesperateOnly</preferability>
+    </ingestible>
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
@@ -54,6 +60,43 @@
     <description>An untreated living fungal mass. High in protein.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Mycoprotein</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.03</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.05</Nutrition>
+      <Beauty>-5</Beauty>
+      <FoodPoisonChanceFixedHuman>0.08</FoodPoisonChanceFixedHuman>
+	  <DeteriorationRate>6.0</DeteriorationRate>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>4</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <preferability>DesperateOnly</preferability>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Kworn</defName>
+    <label>kworn</label>
+    <description>A high protein, fungus based meat substitute. Tastes like chicken!</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Kworn</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <soundInteract>Standard_Drop</soundInteract>
@@ -62,13 +105,31 @@
     <statBases>
       <MaxHitPoints>60</MaxHitPoints>
       <MarketValue>1</MarketValue>
-      <Mass>0.04</Mass>
-      <Flammability>0.8</Flammability>
-	  <DeteriorationRate>2.0</DeteriorationRate>
+      <Mass>0.03</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.05</Nutrition>
+      <Beauty>-3</Beauty>
+      <FoodPoisonChanceFixedHuman>0.01</FoodPoisonChanceFixedHuman>
+	  <DeteriorationRate>6.0</DeteriorationRate>
     </statBases>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
     <thingCategories>
-      <li>PlantMatter</li>
+      <li>MeatRaw</li>
     </thingCategories>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <preferability>RawBad</preferability>
+			<tasteThought>AteRawFood</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
   </ThingDef>
 
 </Defs>
