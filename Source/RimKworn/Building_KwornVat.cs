@@ -272,7 +272,7 @@ namespace RimKworn
 
         public const float MinIdealTemperature = 20f;
 
-        private static readonly Vector2 BarSize = new Vector2(1.1f, 0.2f);
+        private static readonly Vector2 BarSize = new Vector2(0.55f, 0.1f);
 
         private static readonly Color BarZeroProgressColor = new Color(0.9f, 0.9f, 0.9f);
 
