@@ -1,4 +1,0 @@
-Z:\Programs\Steam\steamapps\common\RimWorld\Mods\RimKworn\Assemblies\RimKworn.dll
-Z:\Programs\Steam\steamapps\common\RimWorld\Mods\RimKworn\Source\RimKworn\obj\Debug\RimKworn.csprojAssemblyReference.cache
-Z:\Programs\Steam\steamapps\common\RimWorld\Mods\RimKworn\Source\RimKworn\obj\Debug\RimKworn.csproj.CoreCompileInputs.cache
-Z:\Programs\Steam\steamapps\common\RimWorld\Mods\RimKworn\Source\RimKworn\obj\Debug\RimKworn.dll

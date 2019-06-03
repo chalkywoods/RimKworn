@@ -1,2 +1,5 @@
-Source/RimKworn/.vs/
 Assemblies/
+Source/RimKworn/*
+!/Source/RimKworn/*.csproj
+!/Source/RimKworn/*.sln
+!/Source/RimKworn/*.cs
