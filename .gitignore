@@ -3,3 +3,4 @@ Source/RimKworn/*
 !/Source/RimKworn/*.csproj
 !/Source/RimKworn/*.sln
 !/Source/RimKworn/*.cs
+/About/PublishedFileId.txt

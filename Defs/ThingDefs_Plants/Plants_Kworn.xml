@@ -3,7 +3,7 @@
 
 <ThingDef ParentName="PlantBase">
     <defName>Plant_Sugar</defName>
-    <label>sugar plant</label>
+    <label>sugar cane</label>
     <description>A tall cane crop yielding a sweet sugar syrup.</description>
     <statBases>
       <MaxHitPoints>110</MaxHitPoints>
