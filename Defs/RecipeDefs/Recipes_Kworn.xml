@@ -6,7 +6,7 @@
     <label>refine sugar</label>
     <description>Crush and boil raw sugar cane to produce refined sugar.</description>
     <jobString>Refining sugar.</jobString>
-    <workAmount>450</workAmount>
+    <workAmount>300</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
@@ -22,7 +22,7 @@
       </li>
     </ingredients>
     <products>
-      <SugarRefined>10</SugarRefined>
+      <SugarRefined>15</SugarRefined>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
@@ -54,11 +54,11 @@
             <li>Mycoprotein</li>
           </thingDefs>
         </filter>
-        <count>20</count>
+        <count>40</count>
       </li>
     </ingredients>
     <products>
-      <Kworn>20</Kworn>
+      <Kworn>40</Kworn>
     </products>
     <fixedIngredientFilter>
       <thingDefs>

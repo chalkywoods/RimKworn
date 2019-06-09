@@ -266,7 +266,7 @@ namespace RimKworn
 
         private Material barFilledCachedMat;
 
-        public const int MaxCapacity = 50;
+        public const int MaxCapacity = 150;
 
         private const int BaseFermentationDuration = 90000;
 

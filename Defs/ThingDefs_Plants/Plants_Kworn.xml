@@ -17,11 +17,11 @@
     <pathCost>20</pathCost>
     <ingestible />
     <plant>
-			<growDays>8</growDays>
+			<growDays>6</growDays>
 			<dieIfLeafless>true</dieIfLeafless>
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>SugarCane</harvestedThingDef>
-      <harvestYield>10</harvestYield>
+      <harvestYield>14</harvestYield>
 			<sowMinSkill>4</sowMinSkill>
       <sowTags>
         <li>Ground</li>
